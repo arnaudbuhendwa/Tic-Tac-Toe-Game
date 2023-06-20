@@ -1,0 +1,44 @@
+h1{
+  font-size: 100px;
+}
+
+h3{
+  font-size: 24px;
+  padding: 10px;
+}
+
+body {
+    background-color: tan;
+    font-family: 'CustomFont', sans-serif;
+    padding: 100px;
+  }
+
+  @font-face {
+    font-family: 'CustomFont';
+    src: url('Tilt_Prism/static/TiltPrism-Regular.ttf') format('truetype');
+  }
+  
+.container {  
+    perspective: 1000px;  
+  }
+  
+
+  .cell {
+    width: 100px;
+    height: 100px;
+    border: 1Px solid #000000;
+    text-align: center;
+    font-size: 60px;
+    cursor: pointer;
+    transform: translateZ(50px);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .cell:hover {
+    transform: translateZ(80px) scale(1.1);
+  }
+  
+  .row {
+    transform-style: preserve-3d;
+  }
+  

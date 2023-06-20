@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="text-center">Tic-Tac-Toe</h1>
+    <h3 id="turn" class="text-center">X's Turn</h3>
+    <div class="row justify-content-center"> <!--create a centered layout-->
+      <div class="cell" id="cell-0"></div> 
+      <div class="cell" id="cell-1"></div>
+      <div class="cell" id="cell-2"></div>
+      <!--creates first row-->
+    </div>
+    <div class="row justify-content-center">
+      <div class="cell" id="cell-3"></div>
+      <div class="cell" id="cell-4"></div>
+      <div class="cell" id="cell-5"></div>
+      <!--creates second row-->
+    </div>
+    <div class="row justify-content-center">
+      <div class="cell" id="cell-6"></div>
+      <div class="cell" id="cell-7"></div>
+      <div class="cell" id="cell-8"></div>
+      <!--creates third row-->
+    </div>
+    <div class="text-center mt-5">
+      <button class="btn btn-dark" id="restart">Play Again!</button> <!--creates restart button-->
+    </div>
+  </div>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
