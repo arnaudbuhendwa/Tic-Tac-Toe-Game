@@ -41,13 +41,13 @@ $(document).ready(function() { //event handler starts starts the game when doc i
     });
   
     function checkWin(player) {
-      var winningCombinations = [
+      let winningCombinations = [
         [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
         [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
         [0, 4, 8], [2, 4, 6] // Diagonals
       ];
   
-      for (var i = 0; i < winningCombinations.length; i++) {
+      for (let i = 0; i < winningCombinations.length; i++) {
         let [a, b, c] = winningCombinations[i];
         if (board[a] === player && board[b] === player && board[c] === player) {
           return true;
@@ -58,7 +58,7 @@ $(document).ready(function() { //event handler starts starts the game when doc i
     }
   
     function showAlert(message) {
-      var alertHtml = '<div class="alert alert-primary" role="alert">' +
+      let alertHtml = '<div class="alert alert-primary" role="alert">' +
         message +
         '</div>'; // this make sure the opening and closing tags are balanced
   
